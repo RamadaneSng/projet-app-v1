@@ -1,0 +1,196 @@
+    .app{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        background: #F6F7FB;
+        font-family: $font-3;
+    }
+
+    .account {
+
+        header{
+            
+
+
+            text-align: center;
+            
+        }
+        .content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 10px;
+            width: 80%;
+            margin: 0 auto;
+
+            div {
+                display: flex;
+                align-items: center;
+                background: #ffff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: 1.1rem;
+
+                &:hover{
+                    background: #3879F0;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                span {
+                    margin-right: 20px;
+                    background: #E8F1FE;
+                    padding: 15px;
+                    border-radius: 15px;
+                    
+
+                    i {
+                        color: #0F6EFF;
+                    }
+                }
+            }
+        }
+
+
+        
+    }
+
+    .profile {
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 20px;
+
+            span {
+                position: absolute;
+                left: 20px;
+
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .profile-pic{
+            position: relative;
+            padding: 20px;
+            background: #E9E9EA;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-left: 25px;
+
+            span {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #98999B;
+            }
+            .profile-pic-edit{
+                position: absolute;
+                bottom: -4px;
+                right: -1px;
+                background: #111111;
+                padding: 10px;
+                color: white;
+                border-radius: 50%;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i{
+                    font-size: 0.7rem;
+                }
+                
+
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 1px;
+                background: rgba(128, 128, 128, 0.216);
+                width: 300px;
+                bottom: -25px;
+                text-align: center;
+            
+            }
+        }
+        
+        .user-infos{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 10px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            div {
+                display: flex;
+                align-items: center;
+                background: #ffff;
+                border-radius: 10px;
+
+                span {
+                    margin-left: 10px;
+                    i{
+                        color: #0F6EFF;
+                        font-size: 1.1rem;
+                    }
+                }
+                .user-info-edit{
+                    display: grid;
+                    flex-direction: column;
+                    margin-left: 30px;
+                    align-items: flex-start;
+
+                    input {
+                        border: none;
+                        width: 200px;
+                        height: 30px;
+
+                        &:focus{
+                            outline: none;
+                        }
+                        
+                    }
+                    label{
+                        text-align: left;
+                        font-weight: bold;
+                        margin-top: 13px;
+                        
+                    }
+                }
+            }
+        }
+
+        .button-container{
+            margin-top: 310px;
+            text-align: center;
+            
+
+            button {
+                padding: 10px;
+                width: 200px;
+                border-radius: 6px;
+                background: #00CC96;
+                border: none;
+                color: white;
+                font-size: 1rem;
+            }
+        }
+    }       

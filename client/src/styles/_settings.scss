@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "font-1";
+    src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: "font-2";
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "font-3";
+    src: url("../assets/fonts/Acumin-Variable-Concept.ttf");
+}
+
+
+$font-1: "font-1" , sans-serif;
+$font-2: "font-2" , sans-serif;
+$font-3: "font-3" , sans-serif;
+
+a {
+    text-decoration: none;
+    
+}
+
+li {
+    list-style: none;
+}
+

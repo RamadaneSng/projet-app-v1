@@ -1,0 +1,84 @@
+.parkingFinder-header{
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    .search-bar{
+        
+        input {
+            width: 260px;
+            height: 40px;
+            border-radius: 10px ;
+            border: 1px solid #1111118c;
+        }
+
+        #search {
+            height: 30px;
+            width: 30px;
+            background-color:  #173153;
+            padding: 15px;
+            color: white;
+            border-radius: 10px ;
+        }
+
+        #filter {
+             
+            background-color: white;
+            padding: 10px;
+            color:  #173153;
+            border: 1px solid rgba(0, 0, 0, 0.035);
+            margin-left: 20px;
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .car-selection{
+        display: flex;
+        justify-content: space-between;
+    
+        margin-top: 20px;
+
+        span {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+            i {
+                font-size: 20px;
+
+            }
+            
+        }
+
+        span:first-child {
+            background-color: rgba(255, 255, 0, 0.204);
+
+            i {
+                color: yellow;
+                font-size: 20px;
+            }
+        }
+
+        span:nth-child(2) {
+            background-color: aliceblue;
+            color:  blue;
+
+
+        }
+
+        span:last-child{
+            background: rgba(255, 0, 0, 0.107);
+
+            i {
+                color: red;
+            }
+        }
+    }
+    
+}
