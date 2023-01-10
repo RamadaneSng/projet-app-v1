@@ -1,26 +1,26 @@
 const mongoose = require("mongoose");
 
-const UserModel = mongoose.model(
+const ParkingModel = mongoose.model(
     "app",
     {
-        nom: {
+        nomparking: {
             type: String,
             required: true
         },
-        email: {
+        localisation: {
             type: String,
             required: true
         },
-        numero: {
+        description: {
             type: String,
             required: true
         },
-        mdp: {
-            type: String,
-            required: true
-        }
+        /*  image: {
+              type: String,
+              required: true
+          }*/
     },
-    "user"
+    "parking"
 )
 
-module.exports = { UserModel };
+module.exports = { ParkingModel };
