@@ -21,5 +21,6 @@ mongoose.connect(DB, {}, (err) => {
 
 const port = process.env.PORT || 5500;
 app.listen(port, () => {
-  console.log(`SERVER tourne correctement...✅`);
+  console.log(`SERVER tourne correctement...✅ sur port ` + port);
 });
+

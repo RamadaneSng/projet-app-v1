@@ -5,19 +5,19 @@ const UserModel = mongoose.model(
     {
         nom: {
             type: String,
-            required: true
+            required: true,
         },
         email: {
             type: String,
-            required: true
+            required: true,
         },
         numero: {
             type: String,
-            required: true
+            required: true,
         },
         mdp: {
             type: String,
-            required: true
+            required: true,
         }
     },
     "user"
