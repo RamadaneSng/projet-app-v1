@@ -9,7 +9,7 @@ const Account = () => {
         <h3>Mon Compte</h3>
       </header>
       <div className="content">
-        <NavLink to="/profile">
+        <NavLink to="/profile"> 
           <div>
             <span>
               <i className="fa-regular fa-user"></i>

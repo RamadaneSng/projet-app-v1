@@ -1,0 +1,67 @@
+
+
+.parking-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    overflow: scroll;
+    padding: 0;
+
+    .card {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.282);
+        padding: 10px;
+        margin: 10px;
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
+
+        .left {
+            h3 {
+                color: #173153;
+                margin: 18px 0 0 0;
+            }
+
+            h4 {
+                margin: 5px 0;
+                color: #202020d1;
+                font-weight: normal;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                color: #202020d1;
+                margin: 8px 0;
+                
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                
+                color: white;
+                background:#202020d1 ;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: 0.8rem;
+                border: none;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            img {
+                height: 150px;
+                width: 150px;
+                border-radius: 20px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+        }
+    }
+}

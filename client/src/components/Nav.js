@@ -5,7 +5,9 @@ const Nav = () => {
   return (
     <div className="Nav">
       <span>
-        <i className="fa-solid fa-square-parking"></i>
+        <NavLink to="/parking">
+          <i className="fa-solid fa-square-parking"></i>
+        </NavLink>
       </span>
       <span>
         <i className="fa-solid fa-clock-rotate-left"></i>

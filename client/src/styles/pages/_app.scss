@@ -4,6 +4,14 @@
         overflow: hidden;
         background: #F6F7FB;
         font-family: $font-3;
+        
+
+        h1 {
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
     }
 
     .account {
