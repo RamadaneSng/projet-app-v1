@@ -8,7 +8,7 @@ import SigUp from "./pages/SigUp";
 import Sigin from "./pages/Sigin";
 import Account from "./pages/Account";
 import Profile from "./pages/Profile";
-import ParkingDetails from "./pages/ParkingDetails";
+import Reservation from "./pages/Revervation";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/1" element={<Welcome_2 />} />
         <Route path="/2" element={<Welcome_3 />} />
         <Route path="/parking" element={<FindParking />} />
-        <Route path="/:parkId" element={<ParkingDetails />} />
+        <Route path="/:parkId" element={<Reservation />} />
         <Route path="/inscription" element={<SigUp />} />
         <Route path="/connexion" element={<Sigin />} />
         <Route path="/compte" element={<Account />} />

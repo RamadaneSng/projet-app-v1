@@ -3,23 +3,25 @@ import { NavLink } from 'react-router-dom';
 
 const Card = ({ park }) => {
     return (
-        <NavLink to={`/${park._id}`}>
-            <li className='card'>
 
-                <div className="left">
-                    <h3>{park.nomparking}</h3>
-                    <h4>capacité: <span> {park.capacite} </span>places</h4>
-                    <p>prix du stationement par heure: <span> {park.prix} </span>FCFA</p>
+        <li className='card'>
+
+            <div className="left">
+                <h3>{park.nomparking}</h3>
+                <h4>capacité: <span> {park.capacite} </span>places</h4>
+                <p>prix du stationement par heure: <span> {park.prix} </span>FCFA</p>
+                <NavLink to={`/${park._id}`}>
                     <button>Reserver</button>
-                </div>
+                </NavLink>
+            </div>
 
-                <div className="right">
-                    <img src="./assets/images/parking-img.webp" alt="" />
-                </div>
+            <div className="right">
+                <img src="./assets/images/parking-img.webp" alt="" />
+            </div>
 
 
-            </li >
-        </NavLink>
+        </li >
+
     );
 };
 
