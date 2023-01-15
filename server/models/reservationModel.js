@@ -21,16 +21,17 @@ const reservationSchema = new Schema({
     },
     date: {
         type: Date,
-        required: true,
+        required: false,
+        default: Date.now()
 
     },
-    duree:{
+    duree: {
         type: String,
         required: true,
     },
     prix: {
         type: String,
-       // required: true
+        // required: true
         default: 1000,
     },
 });

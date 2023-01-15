@@ -15,7 +15,7 @@ const Findparking = () => {
   return (
     <div className="app">
       <Header />
-      <h1>Parking Disponible</h1>
+      <h1>Parkings Disponibles</h1>
       <ul className="parking-container">
         {parkingData.map((park) => (
           <Card park={park} key={park._id} />

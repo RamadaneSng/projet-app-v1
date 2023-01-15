@@ -3,13 +3,39 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Reservation = () => {
+    const [name, setName] = useState("");
+    const [number, setNumber] = useState("");
+    const [serie, setSerie] = useState("");
+
     const params = useParams()
 
     const [singleparking, setSingleParkingData] = useState([]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        axios.post('http://localhost:8080/reservation/posts', {
+            nom: name,
+            numero: number,
+            vehicule: serie,
+            nomparking: singleparking.nomparking,
+            duree: "2",
+            prix: "2000"
+        })
     }
+
+    console.log(name, number, serie);
+
+    const addStorage = () => {
+        let storedData = window.localStorage.parkings
+            ? window.localStorage.parkings.split(",")
+            : [];
+
+        if (!storedData.includes(singleparking._id)) {
+            storedData.push(singleparking._id);
+            window.localStorage.parkings = storedData;
+        }
+    };
 
     useEffect(() => {
         axios.get(`http://localhost:8080/park/gets/${params.parkId}`).then((res) => {
@@ -51,11 +77,11 @@ const Reservation = () => {
             <div className="payement-infos">
                 <form action="" onSubmit={(e) => handleSubmit(e)}>
                     <label htmlFor="name">Nom</label>
-                    <input type="text" name="name" id="name" placeholder='votre nom' />
+                    <input type="text" name="name" id="name" placeholder='votre nom' onChange={(e) => setName(e.target.value)} />
                     <label htmlFor="numero">Numero de telephone</label>
-                    <input type="text" name="numero" id="numero" placeholder='votre numro de telephone' />
+                    <input type="text" name="numero" id="numero" placeholder='votre numro de telephone' onChange={(e) => setNumber(e.target.value)} />
                     <label htmlFor="car-number">Numero de serie de votre voiture</label>
-                    <input type="text" name="car-number" id="car-number" placeholder='numero de serie de votre voiture' />
+                    <input type="text" name="car-number" id="car-number" placeholder='numero de serie de votre voiture' onChange={(e) => setSerie(e.target.value)} />
 
                     <div className="select-payement">
                         <h3>Méthode de paiement</h3>
@@ -70,7 +96,7 @@ const Reservation = () => {
                     </div>
 
                     <div className="submit">
-                        <input type="submit" value="payer" />
+                        <input type="submit" value="payer" onClick={() => addStorage()} />
                     </div>
 
                 </form>
