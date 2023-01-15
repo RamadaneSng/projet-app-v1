@@ -12,7 +12,7 @@ const Commande = () => {
     }, [])
     return (
         <div className="commande">
-            <h3>Mes commandes</h3>
+            <h3 className='title'>Mes commandes</h3>
             <ul className="content">
                 {reservationData.map((res) =>
                     <ResCard key={res._id} res={res} />

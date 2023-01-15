@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <Welcome_centent
       content={
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, cupiditate."
+        "PRAMSK, votre solution de stationnement facile et rapide"
       }
       link={"/1"}
     />

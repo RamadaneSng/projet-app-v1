@@ -10,7 +10,9 @@ const Nav = () => {
         </NavLink>
       </span>
       <span>
-        <i className="fa-solid fa-clock-rotate-left"></i>
+        <NavLink to="/liste-des-commandes">
+          <i className="fa-solid fa-clock-rotate-left"></i>
+        </NavLink>
       </span>
       <span>
         <NavLink to="/compte">

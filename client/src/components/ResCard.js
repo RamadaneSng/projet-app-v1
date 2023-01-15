@@ -16,18 +16,15 @@ const ResCard = ({ res }) => {
 
     return (
         <li className="card">
+            <h3 className='serie'>{res.vehicule}</h3>
+            <h3 className='price'>{res.prix} FCFA</h3>
             <div className="header">
-                <div className="header-left">
-                    <h3>{res.vehicule}</h3>
-                    <h4>Commande pour: {res.nom}</h4>
-                </div>
-                <div className="header right">
-                    <h3>{res.prix} FCFA</h3>
-                </div>
+                <h4>Commande pour: <span> {res.nom}</span>
+                </h4>
             </div>
             <div className="main">
                 <h3>{res.nomparking}</h3>
-                <p> <i className="fa-regular fa-calendar-days"></i>date de reservation: {dateFormateur(res.date)} heures</p>
+                <p> <i className="fa-regular fa-calendar-days"></i>{dateFormateur(res.date)} </p>
             </div>
         </li>
     );

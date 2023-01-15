@@ -5,6 +5,7 @@
     .logo {
         display: flex;
         justify-content: center;
+        margin: 0;
         img {
             height: 180px;
             width: 180px;
@@ -81,14 +82,15 @@
     }
     input[type="submit"] {
     border: none;
-    background: cyan;
+    background: #173153;
     width: 50%;
     margin: 12px auto 0;
     padding: 10px;
-    border-radius: 150px;
+    border-radius: 15px;
     font-size: 1.2rem;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    color: whitesmoke;
     transition: 0.3s ease;
     }
     input[type="submit"]:hover {
@@ -118,5 +120,14 @@
     width: 100%;
     background: #5ef9a4;
     visibility: visible;
+    }
+
+    div {
+        margin-top: 10px;
+        text-align: center;
+
+        h4 {
+            display: inline;
+        }
     }
 }

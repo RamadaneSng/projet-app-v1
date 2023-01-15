@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Form from "../components/Form";
 
 const SigUp = () => {
@@ -32,6 +33,7 @@ const SigUp = () => {
         </div>
         <input type="submit" value="Inscription" />
       </form>
+      <div>vous avez déja un compte ? <NavLink to="/connexion"><h4>Connexion</h4></NavLink></div>
     </div>
   );
 };
