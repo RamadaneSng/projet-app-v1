@@ -9,6 +9,7 @@ import Sigin from "./pages/Sigin";
 import Account from "./pages/Account";
 import Profile from "./pages/Profile";
 import Reservation from "./pages/Revervation";
+import Commande from "./pages/Commande";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/inscription" element={<SigUp />} />
         <Route path="/connexion" element={<Sigin />} />
         <Route path="/compte" element={<Account />} />
+        <Route path="/liste-des-commandes" element={<Commande />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
