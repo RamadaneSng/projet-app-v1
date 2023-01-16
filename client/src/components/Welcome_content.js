@@ -9,7 +9,7 @@ const Welcome = ({ content, link }) => {
         <h3>{content}</h3>
       </div>
       <div className="bottom-nav">
-        <NavLink to="/parking">
+        <NavLink to="/inscription">
           <span>Passer</span>
         </NavLink>
         <NavLink to={link}>

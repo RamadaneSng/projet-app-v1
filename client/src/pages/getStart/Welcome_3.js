@@ -7,7 +7,7 @@ const Welcome_3 = () => {
       content={
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, soluta"
       }
-      link={"/parking"}
+      link={"/inscription"}
     />
   );
 };

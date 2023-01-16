@@ -105,24 +105,7 @@ const Form = () => {
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      if (pseudo && email && password && confirmPass) {
-        const data = {
-          pseudo,
-          email,
-          password,
-        };
-        console.log(data);
-        inputs.forEach((input) => (input.value = ""));
-        progressBar.classList = "";
 
-        pseudo = null;
-        email = null;
-        password = null;
-        confirmPass = null;
-        alert("inscription valider");
-      } else {
-        alert("veuillez remplir correctement les chants");
-      }
     });
   });
 };

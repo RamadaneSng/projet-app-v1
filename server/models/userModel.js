@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const UserModel = mongoose.model(
     "app",
     {
@@ -8,10 +9,6 @@ const UserModel = mongoose.model(
             required: true,
         },
         email: {
-            type: String,
-            required: true,
-        },
-        numero: {
             type: String,
             required: true,
         },
