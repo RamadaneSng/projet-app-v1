@@ -5,7 +5,7 @@ const Welcome_3 = () => {
   return (
     <Welcome_centent
       content={
-        "PRAMSK, pour ne plus galerer chercher une place de parking"
+        "PRAMSK, pour ne plus galérer à trouver une place de parking"
       }
       link={"/inscription"}
     />
