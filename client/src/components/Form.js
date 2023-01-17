@@ -62,7 +62,7 @@ const Form = () => {
 
     const confirmChecker = (value) => {
       if (value !== password) {
-        errorDisplay("confirm", "les mots de passe ne correspondent pas ");
+        // errorDisplay("confirm", "les mots de passe ne correspondent pas ");
         confirmPass = false;
       } else {
         errorDisplay("confirm", "", true);

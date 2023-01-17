@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Profile = () => {
+
+
   return (
     <div className="app profile">
       <header>

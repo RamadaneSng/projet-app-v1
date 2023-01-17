@@ -1,11 +1,20 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { NavLink, useNavigate} from "react-router-dom";
 
 const Reservation = () => {
     const [name, setName] = useState("");
     const [number, setNumber] = useState("");
     const [serie, setSerie] = useState("");
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const navigate = useNavigate();
+
+
+
+    if (isSubmitted) {
+        navigate('/liste-des-commandes')
+    }
 
     const params = useParams()
 
@@ -13,6 +22,7 @@ const Reservation = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSubmitted(true);
 
         axios.post('http://localhost:8080/reservation/posts', {
             nom: name,
@@ -45,6 +55,12 @@ const Reservation = () => {
     }, [params.parkId])
     return (
         <div className='reservation'>
+            <span className='arrow-left'>
+
+                <NavLink to="/parking">
+                    <i className="fa-solid fa-arrow-left"></i>
+                </NavLink>
+            </span>
             <div className="parking-features">
                 <h3>{singleparking.nomparking}</h3>
                 <p className='localisation'><i className="fa-solid fa-location-dot"></i> {singleparking.localisation}</p>
