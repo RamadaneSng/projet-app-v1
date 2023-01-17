@@ -32,7 +32,7 @@ const Profile = () => {
             </span>
             <div className="user-info-edit">
               <label htmlFor="name">Nom</label>
-              <input type="text" id="name" autoComplete="off" />
+              <input type="text" id="name" autoComplete="off" value="sanogo" />
             </div>
           </div>
           <div>
@@ -41,10 +41,10 @@ const Profile = () => {
             </span>
             <div className="user-info-edit">
               <label htmlFor="email">Email</label>
-              <input type="text" id="name" autoComplete="off" />
+              <input type="text" id="name" autoComplete="off" value="sanogo@gmail.ci" />
             </div>
           </div>
-          <div>
+          {/* <div>
             <span>
               <i className="fa-solid fa-phone"></i>
             </span>
@@ -52,14 +52,14 @@ const Profile = () => {
               <label htmlFor="phone">Numero de telephone</label>
               <input type="text" id="phone" autoComplete="off" />
             </div>
-          </div>
+          </div> */}
           <div>
             <span>
               <i className="fa-sharp fa-solid fa-key"></i>
             </span>
             <div className="user-info-edit">
               <label htmlFor="password">Mot de passe</label>
-              <input type="password" id="password" autoComplete="off" />
+              <input type="password" id="password" autoComplete="off" value="**********"/>
             </div>
           </div>
         </div>

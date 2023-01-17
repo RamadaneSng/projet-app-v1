@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49a7364a.css",
+    "main.js": "/static/js/main.9660015b.js",
+    "static/media/parking.jpg": "/static/media/parking.922ef5d1d1a9edf1f14c.jpg",
+    "static/media/Acumin-Variable-Concept.ttf": "/static/media/Acumin-Variable-Concept.c59fb2bd1f37a1433b15.ttf",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "service-worker.js": "/service-worker.js",
+    "index.html": "/index.html",
+    "main.49a7364a.css.map": "/static/css/main.49a7364a.css.map",
+    "main.9660015b.js.map": "/static/js/main.9660015b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49a7364a.css",
+    "static/js/main.9660015b.js"
+  ]
+}
